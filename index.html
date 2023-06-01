@@ -418,21 +418,35 @@
                 </div>
 
 
-                <label class="contact_form_field_wrapper">
-                    <span class="contact_form_field_desc">Comment</span>
-                    <textarea class="contact_form_message" name="user_message" placeholder="Text input"></textarea>
-                </label>
-                <label class="contact_form_checkbox_wrapper">
-                    <input class="contact_form_checkbox" type="checkbox" name="user_policy" required />
-                    <!--<svg class="contact_form_own_checkbox" width="16" height="16">
-                        <use href="./images/icons.svg#checkmark-default"></use>
-                    </svg>-->
-                    <!--<span class="contact_form_own_checkbox"></span>-->
-                    <svg class="contact_form_own_checkbox" width="16" height="16">
-                        <use class="contact_form_checkbox_icon" href="./images/icons.svg#checkmark-click"></use>
-                    </svg>
-                    I accept the terms and conditions of the<a class="contact_form_link" href="#">Privacy Policy</a>
-                </label>
+
+                <div class="contact_message_wrapper">
+                    <label class="contact_form_field_wrapper" for="user-comment">
+                        Comment
+                    </label>
+                    <textarea class="contact_message" id="user-comment" name="user-comment" placeholder="Text input"></textarea>
+                </div>
+
+
+
+                <div class="contact_form_checkbox_wrapper">
+                    <input class="contact_form_checkbox visually-hidden" id="user-privacy" name="user-privacy" type="checkbox" value="true" required />
+                    <label class="contact_form_checkbox_label" for="user-privacy">
+                    
+                        <!--<svg class="contact_form_own_checkbox" width="16" height="16">
+                                            <use href="./images/icons.svg#checkmark-default"></use>
+                                        </svg>-->
+                        <span class="contact_form_own_checkbox">
+                            <svg class="contact_form_own_checkbox_icon" width="10" height="8">
+                                <use class="contact_form_checkbox_icon" href="./images/icons.svg#checkmark-click"></use>
+                            </svg>
+                        </span>
+                        I accept the terms and conditions of the<a class="contact_form_link" href="#">Privacy Policy</a>
+                    </label>
+                </div>
+               
+
+
+
                 <button type="submit" class="contact_form_submit">Send</button>
             </form>
         </div>

@@ -871,7 +871,6 @@ nav {
   color: var(--light-slate);
 }
 
-
 .contact_form_own_checkbox {
   display: inline-flex;
   width: 16px;
@@ -902,7 +901,7 @@ nav {
   opacity: 0;
 }
 
-.contact_form_checkbox:checked+.contact_form_own_checkbox {
+.contact_form_checkbox:checked + .contact_form_own_checkbox {
   background-color: #404bbf;
   border: none;
   fill: #ffffff;
